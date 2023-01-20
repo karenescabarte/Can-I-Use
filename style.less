@@ -1,0 +1,132 @@
+@color_1: #fff;
+@color_2: #333;
+@color_3: #000;
+@font_family_1: Arial, Helvetica, sans-serif;
+@background_color_1: rgb(58, 50, 32);
+@background_color_2: rgba(108, 107, 107, 0.766);
+@background_color_3: rgb(200, 79, 0);
+@background_color_4: rgb(242, 233, 214);
+@background_color_5: rgb(37, 133, 51);
+@background_color_6: rgb(129, 0, 0);
+@background_color_7: rgb(148, 112, 12);
+@background_color_8: rgb(235, 226, 207);
+@background_color_9: #fff;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: @background_color_1;
+	font-family: @font_family_1;
+}
+main {
+	max-width: 100%;
+	padding: 0 10%;
+	nav {
+		ul {
+			padding: 20px 0;
+			li {
+				list-style: none;
+				display: inline;
+				padding: 20px;
+				background-color: @background_color_2;
+				a {
+					text-decoration: none;
+					color: @color_1;
+				}
+			}
+		}
+	}
+	ul {
+		li.right-side {
+			position: relative;
+			left: 780px;
+		}
+	}
+	header {
+		background-color: @background_color_3;
+		color: @color_1;
+		padding: 50px 0;
+		text-align: center;
+		margin: 30px 0;
+		h1 {
+			font-weight: 100;
+		}
+		span {
+			border-bottom: 1px solid #fff;
+			padding: 0 200px;
+		}
+	}
+}
+div.pinned-tag {
+	position: absolute;
+	color: @color_1;
+	top: 280px;
+	left: 105px;
+	font-size: 32px;
+	background-color: @background_color_3;
+	padding: 5px 15px;
+}
+section.es6-section {
+	background-color: @background_color_4;
+	padding: 20px;
+	h2 {
+		color: @color_2;
+		font-weight: 100;
+		padding: 0 0 30px;
+		font-size: 32px;
+	}
+	p {
+		width: 50%;
+		line-height: 1.5;
+		margin-bottom: 30px;
+	}
+	table {
+		td {
+			padding: 15px;
+			width: 120px;
+			text-align: center;
+			color: @color_1;
+			position: relative;
+		}
+		tr {
+			td.green {
+				background-color: @background_color_5;
+			}
+			td.red {
+				background-color: @background_color_6;
+			}
+			td.brown {
+				background-color: @background_color_7;
+			}
+			td.no-data {
+				background-color: @background_color_8;
+			}
+			td {
+				.superscript {
+					width: 15px;
+					color: @color_3;
+					font-size: 10px;
+					position: absolute;
+					background-color: @background_color_9;
+					left: 2px;
+					top: 2px;
+				}
+				.superscript-second-value {
+					width: 15px;
+					color: @color_3;
+					font-size: 10px;
+					position: absolute;
+					background-color: @background_color_9;
+					left: 15px;
+					top: 2px;
+				}
+			}
+		}
+	}
+	th {
+		border-bottom: 7px solid #000;
+	}
+}
